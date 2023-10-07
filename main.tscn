@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://c5syno278afhj"]
+
+[ext_resource type="Script" path="res://test.cs" id="1_uu18p"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(11, 6)
+script = ExtResource("1_uu18p")
