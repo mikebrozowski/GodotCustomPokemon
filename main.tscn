@@ -1,7 +1,17 @@
-[gd_scene load_steps=2 format=3 uid="uid://c5syno278afhj"]
+[gd_scene load_steps=3 format=3 uid="uid://c5syno278afhj"]
 
-[ext_resource type="Script" path="res://test.cs" id="1_uu18p"]
+[ext_resource type="Script" path="res://testgd.gd" id="1_ect1p"]
+[ext_resource type="PackedScene" uid="uid://cnts28ep4w2aw" path="res://bulb.tscn" id="2_ik8xu"]
 
 [node name="Node2D" type="Node2D"]
-position = Vector2(11, 6)
-script = ExtResource("1_uu18p")
+position = Vector2(580, 340)
+script = ExtResource("1_ect1p")
+
+[node name="Sprite2D" parent="." instance=ExtResource("2_ik8xu")]
+
+[node name="Sprite2D2" parent="." instance=ExtResource("2_ik8xu")]
+position = Vector2(-17, -256)
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Timer" type="Timer" parent="Node2D"]

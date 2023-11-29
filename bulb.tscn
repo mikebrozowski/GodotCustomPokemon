@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cnts28ep4w2aw"]
+
+[ext_resource type="Texture2D" uid="uid://pq3eiaip3r3s" path="res://001_gen5_front.png" id="1_dhy00"]
+[ext_resource type="Script" path="res://test_sprite.gd" id="2_bwsq5"]
+
+[node name="Sprite2D" type="Sprite2D"]
+texture = ExtResource("1_dhy00")
+script = ExtResource("2_bwsq5")
+
+[node name="001Gen5Front" type="Sprite2D" parent="."]
+position = Vector2(359, 76)
+texture = ExtResource("1_dhy00")
+
+[connection signal="frame_changed" from="." to="." method="_on_frame_changed_test2"]
